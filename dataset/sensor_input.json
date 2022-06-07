@@ -1,0 +1,39 @@
+{
+	"name": "sensor_input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "sensor-input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "LIGHT (lux)",
+				"type": "String"
+			},
+			{
+				"name": "PROXIMITY (i)",
+				"type": "String"
+			},
+			{
+				"name": "Time since start in ms ",
+				"type": "String"
+			},
+			{
+				"name": "YYYY-MO-DD HH-MI-SS_SSS",
+				"type": "String"
+			}
+		]
+	}
+}

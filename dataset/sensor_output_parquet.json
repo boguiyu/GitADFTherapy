@@ -1,0 +1,19 @@
+{
+	"name": "sensor_output_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "sensor-output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
