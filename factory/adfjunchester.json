@@ -1,0 +1,9 @@
+{
+	"name": "adfjunchester",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7c8aa827-acd6-44e9-b335-ee8abbc96555",
+		"tenantId": "8d1a69ec-03b5-4345-ae21-dad112f5fb4f"
+	}
+}
