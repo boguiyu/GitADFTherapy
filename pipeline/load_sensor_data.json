@@ -75,12 +75,14 @@
 									}
 								},
 								"sink": {
-									"type": "ParquetSink",
+									"type": "DelimitedTextSink",
 									"storeSettings": {
 										"type": "AzureBlobStorageWriteSettings"
 									},
 									"formatSettings": {
-										"type": "ParquetWriteSettings"
+										"type": "DelimitedTextWriteSettings",
+										"quoteAllText": true,
+										"fileExtension": ".txt"
 									}
 								},
 								"enableStaging": false,
@@ -101,8 +103,11 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "sensor_output_parquet",
-									"type": "DatasetReference"
+									"referenceName": "sensor_output",
+									"type": "DatasetReference",
+									"parameters": {
+										"fileName": "@item().name"
+									}
 								}
 							]
 						}
