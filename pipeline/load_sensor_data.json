@@ -127,6 +127,12 @@
 								"secureInput": false
 							},
 							"userProperties": [],
+							"typeProperties": {
+								"notebookPath": "/Repos/bliu11@stevens.edu/GITADBtherapy/sensor_data_process_from_ADF",
+								"baseParameters": {
+									"input": "@item().name"
+								}
+							},
 							"linkedServiceName": {
 								"referenceName": "AzureDatabricks1",
 								"type": "LinkedServiceReference"
